@@ -9,8 +9,6 @@ docker run  \
 composer \
 bash -c "echo \$(id -u \${USER}):\$(id -g \${USER}) && composer create-project --prefer-dist laravel/laravel '$projeto';"
 
-bash -c "echo \$(id -u \${USER}):\$(id -g \${USER}) && composer create-project --prefer-dist laravel/laravel '$projeto';"
-
 cd "$projeto"
 git init
 git add .
